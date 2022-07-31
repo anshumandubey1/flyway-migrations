@@ -1,0 +1,14 @@
+fileignoreconfig:
+- filename: src/main/resources/db/migration/V1.0__Create_users_table.sql
+  checksum: 0d8471875cd290be3aab573abffea4930eb1455d5deb138446fa681c1eae54d2
+- filename: src/main/resources/db/migration/V1.1__Create_products_table.sql
+  checksum: faaa1112b63eb817dc5e0a74e2b7a25e284a4a3ce13b8f7b8bdad3057d00d291
+- filename: src/main/resources/db/migration/V2.1__Alter_name_field_in_users_table.sql
+  checksum: 285d62db9e9fac76271ebf0c9cdad4ff4a288b36598e3179f48f643081431d17
+- filename: src/main/resources/db/migration/V2.2__Add_primary_phone_number_field_in_users_table.sql
+  checksum: cc8790e75a0a7cfe27d2813bf3b5e5f3dacbc0957ea0606437490ec66a43184e
+- filename: src/main/resources/db/migration/V3.1__Create_carts_table.sql
+  checksum: 9e01560ed17a6815292438fb54afea9ee8872590d5e6f7d881642c6495a012c8
+- filename: src/main/resources/db/migration/V3.2__Create_cart_items_table.sql
+  checksum: c85a7010ba8f5d5d44e922f8ddf3a734e91d106ef3b4681f4daf674579df40f7
+version: ""

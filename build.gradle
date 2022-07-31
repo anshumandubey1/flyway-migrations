@@ -1,0 +1,29 @@
+buildscript {
+    dependencies {
+        classpath 'org.postgresql:postgresql:42.2.14'
+    }
+}
+
+plugins {
+    id 'java'
+    id "org.flywaydb.flyway" version "9.0.4"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+// we need to build classes before we can migrate
+flywayMigrate.dependsOn classes
